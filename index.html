@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Progress Bar Task</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bar-container">
+            <div id="progressBar1" class="progress-bar green">50%</div>
+        </div>
+        <div class="bar-container">
+            <div id="progressBar2" class="progress-bar red">50%</div>
+        </div>
+        <div class="bar-container">
+            <div id="progressBar3" class="progress-bar white">50%</div>
+        </div>
+        <div class="bar-container">
+            <div id="progressBar4" class="progress-bar blue">50%</div>
+        </div>
+        <div class="bar-container">
+            <div id="progressBar5" class="progress-bar yellow">50%</div>
+        </div>
+        <button onclick="move()">Finish</button>
+    </div>
+
+    <script>
+        function move() {
+            let elem1 = document.getElementById("progressBar1");
+            let elem2 = document.getElementById("progressBar2");
+            let elem3 = document.getElementById("progressBar3");
+            let elem4 = document.getElementById("progressBar4");
+            let elem5 = document.getElementById("progressBar5");
+            var width = 50;
+            var id = setInterval(frame, 10); 
+            function frame() {
+                if(width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem1.style.width = width + '%';
+                    elem2.style.width = width + '%';
+                    elem3.style.width = width + '%';
+                    elem4.style.width = width + '%';
+                    elem5.style.width = width + '%';
+
+                    elem1.innerHTML = width * 1 + '%';
+                    elem2.innerHTML = width * 1 + '%';
+                    elem3.innerHTML = width * 1 + '%';
+                    elem4.innerHTML = width * 1 + '%';
+                    elem5.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

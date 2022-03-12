@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 20rem;
+  padding: 2rem 3rem;
+  display: flex;
+  width: 60vw;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.bar-container {
+  width: 30rem;
+  background-color: lightgrey;
+  border-radius: 20px;
+  height: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  padding-right: 3%;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 50%;
+  border-radius: 20px;
+  border: 1px solid grey;
+  font-size: 15px;
+}
+
+.green {
+  background-image: linear-gradient(
+    132deg,
+    #14a85c 33.33%,
+    #f5f5f5 33.33%,
+    #f5f5f5 50%,
+    #14a85c 50%,
+    #14a85c 83.33%,
+    #f5f5f5 83.33%,
+    #f5f5f5 100%
+  );
+  background-size: 3px 3.33px;
+}
+
+.red {
+  background-image: linear-gradient(
+    132deg,
+    #e32929 33.33%,
+    #f5f5f5 33.33%,
+    #f5f5f5 50%,
+    #e32929 50%,
+    #e32929 83.33%,
+    #f5f5f5 83.33%,
+    #f5f5f5 100%
+  );
+  background-size: 3px 3.33px;
+}
+
+.white {
+  background-color: white;
+}
+
+.blue {
+  background-image: linear-gradient(
+    132deg,
+    #1831f0 33.33%,
+    #f5f5f5 33.33%,
+    #f5f5f5 50%,
+    #1831f0 50%,
+    #1831f0 83.33%,
+    #f5f5f5 83.33%,
+    #f5f5f5 100%
+  );
+  background-size: 3px 3.33px;
+}
+
+.yellow {
+  background-image: linear-gradient(
+    132deg,
+    #d1cc32 33.33%,
+    #f5f5f5 33.33%,
+    #f5f5f5 50%,
+    #d1cc32 50%,
+    #d1cc32 83.33%,
+    #f5f5f5 83.33%,
+    #f5f5f5 100%
+  );
+  background-size: 3px 3.33px;
+}
+
+button {
+  width: 5rem;
+  height: 2rem;
+  margin: 0 auto;
+}
